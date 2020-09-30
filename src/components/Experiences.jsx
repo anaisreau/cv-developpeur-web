@@ -5,7 +5,8 @@ import logo from '../PO.jpeg'
 
 const Experiences =()=>{
 
-const exp= [{
+const exp=[
+  {
   poste : 'Developpeur Web FullStack', 
   entreprise: 'Marmignon Brothers',
   présentation : 'Creation d\'un site de formation en ligne' ,
@@ -13,7 +14,8 @@ const exp= [{
   image : 'https://www.marmignonbrothers.com/wp-content/uploads/2019/04/cropped-V1-Couleur.png', 
   competences : 'React.js, Node.js, Semantic-ui, MongoDB, SQL',
   date : '01/09/2020'
-}, {
+}, 
+{
   poste : 'Projet 3 ', 
   entreprise: 'Wild Code School et Immobiliere Pujol',
   présentation : 'Dans le cadre du drame de la rue d\'Aubagne à Marseille et de la mise en péril d\'un certain nombre d\'immeuble, création d\'une application visant a faciliter les signalements d\'insalubrité aux personnes compétentes ' ,
@@ -67,7 +69,6 @@ const exp= [{
   competences : 'Management, Normes d\'hygiene, Cuisine  ',
   date : '01/07/2013'
 }, 
-, 
 {
   poste : 'Assistante Directrice des Ventes ', 
   entreprise: 'SNCF',
@@ -77,7 +78,6 @@ const exp= [{
   competences : 'Pack Office',
   date : '26/09/2012'
 }, 
-, 
 {
   poste : 'Assistante Animateur des ventes ', 
   entreprise: 'SNCF',
@@ -105,8 +105,7 @@ const exp= [{
           horizontal
           style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
-          <a >Expériences Professionnelles
-</a> 
+          <p>Expériences Professionnelles</p> 
         </Divider>
         <div className='card'>
   {exp.map(e => 

@@ -10,7 +10,7 @@ import {
   Segment,
   Sidebar,
   Visibility,
-  List
+
 } from 'semantic-ui-react';
 import './NavBar.css'
 
@@ -22,16 +22,7 @@ const { MediaContextProvider, Media } = createMedia({
   },
 })
 
-const styles = {
-  large: {
-    fontSize: 60,
-    fontWeight: 'bold'
-  },
-  small: {
-    opacity: 0.7,
-    fontSize: 16
-  }
-};
+
 
 
 const HomepageHeading = ({ mobile }) => (

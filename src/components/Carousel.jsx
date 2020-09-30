@@ -1,7 +1,7 @@
 import React from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import {Divider, Icon} from 'semantic-ui-react'
+import {Divider} from 'semantic-ui-react'
 import './Carousel.css'
 
 const Car=()=> {
@@ -15,7 +15,7 @@ const Car=()=> {
             horizontal
             style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
-            <a>Mes centres d'interets</a>           
+            <p>Mes centres d'interets</p>           
 
         </Divider> 
        

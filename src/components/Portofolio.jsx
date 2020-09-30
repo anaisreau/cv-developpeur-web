@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Icon, Image, Divider, Segment, Container } from 'semantic-ui-react'
+import { Card, Icon,  Divider } from 'semantic-ui-react'
 import './Portfolio.css'
 
 const cardPortfolio = [{
@@ -51,7 +51,7 @@ return(
           horizontal
           style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
-          <a>Portfolio</a>
+          <p>Portfolio</p>
         </Divider>
    <Icon className='accueil'href ='#' name ='arrow up'></Icon>
      

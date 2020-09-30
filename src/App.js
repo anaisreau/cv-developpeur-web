@@ -9,7 +9,6 @@ import Nuage from './components/Nuage'
 import Contact from './components/Contact'
 import Car from './components/Carousel';
 import Footer from './components/Footer';
-import Presentation from './components/Presentation';
 
 
 function App() {

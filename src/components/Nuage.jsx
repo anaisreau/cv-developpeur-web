@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import randomColor from 'randomcolor';
 import TagCloud from 'react-tag-cloud';
-import CloudItem from './CloudItem';
 import './Nuage.css'
 import { Divider, Segment, Icon  } from 'semantic-ui-react'
 
@@ -32,8 +31,7 @@ class Nuage extends Component {
           horizontal
           style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
-          <a>Competences Clé
-</a> 
+          <p>Competences Clé</p> 
         </Divider>
         <Icon className='accueil'href ='#' name ='arrow up'></Icon>
 

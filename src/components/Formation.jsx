@@ -12,8 +12,7 @@ return (
           horizontal
           style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
-          <a>Formations
-</a> 
+          <p>Formations</p> 
         </Divider>
         <Icon className='accueil'href ='#' name ='arrow up'></Icon>
 
