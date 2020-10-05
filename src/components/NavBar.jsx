@@ -1,6 +1,6 @@
 import { createMedia } from '@artsy/fresnel'
 import PropTypes from 'prop-types'
-import React, { Component } from 'react'
+import React, { Component, useEffect } from 'react'
 import {
   Button,
   Container,
@@ -15,6 +15,8 @@ import CV from '../CV-Anais-Reau.pdf'
 import './title.scss'
 import './NavBar.css'
 import Title from './title'
+import aos from 'aos'
+import 'aos/dist/aos.css'
 
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {
@@ -27,7 +29,13 @@ const { MediaContextProvider, Media } = createMedia({
 
 
 
-const HomepageHeading = ({ mobile }) => (
+const HomepageHeading = ({ mobile }) => {
+  
+  useEffect(()=>{
+  aos.init({duration : 2000 })
+},[]); 
+return (
+
 <div className='adaptable'>
 
   <>
@@ -43,11 +51,11 @@ const HomepageHeading = ({ mobile }) => (
         color : mobile ? 'white' : 'black',
         
       }}>
-     <a href='mailto:anaisreau@gmail.com'><Icon name='mail'/></a>
-     <a href='https://www.linkedin.com/in/anaisreau/'target='_blanck'><Icon name='linkedin'/></a>
-     <a href='https://github.com/anaisreau' target='_blanck'><Icon name='github'/></a>
-     </div>
-     
+        
+     <a data-aos='fade-in'href='mailto:anaisreau@gmail.com'><Icon name='mail'/></a>
+     <a data-aos='fade-in'href='https://www.linkedin.com/in/anaisreau/'target='_blanck'><Icon name='linkedin'/></a>
+     <a data-aos='fade-in'href='https://github.com/anaisreau' target='_blanck'><Icon name='github'/></a></div>
+   
 <a href={CV} download><footer>
     <div class="texto">
         <span>
@@ -58,7 +66,7 @@ const HomepageHeading = ({ mobile }) => (
    </a>
 </></div>
 )
-
+    }
 HomepageHeading.propTypes = {
   mobile: PropTypes.bool,
 }
@@ -105,7 +113,7 @@ class DesktopContainer extends Component {
                 <Menu.Item as='a' href='#carousel'>Centres d'intérets</Menu.Item>
                 <Menu.Item position='right'>
 
-                  <Button as='a' href='#contact' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
+                  <Button href='#contact' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
                     Me contacter</Button>
                 </Menu.Item>
               </Container>

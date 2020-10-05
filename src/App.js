@@ -9,11 +9,13 @@ import Nuage from './components/Nuage'
 import Contact from './components/Contact'
 import Car from './components/Carousel';
 import Footer from './components/Footer';
+import {Icon} from 'semantic-ui-react'
 
 
 function App() {
   return (
     <>
+    <a className='retourHaut' href='#'><Icon name='arrow alternate circle up outline'></Icon></a>
     <div className="fond">
      <NavBar />
     </div>
