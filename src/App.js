@@ -15,7 +15,7 @@ import {Icon} from 'semantic-ui-react'
 function App() {
   return (
     <>
-    <a className='retourHaut' href='#'><Icon name='arrow alternate circle up outline'></Icon></a>
+    <a className='retourHaut' href='/'><Icon name='arrow alternate circle up outline'></Icon></a>
     <div className="fond">
      <NavBar />
     </div>
