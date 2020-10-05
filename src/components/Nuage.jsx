@@ -85,7 +85,7 @@ class Nuage extends Component {
         <li>La creation de visuels commerciaux, </li>
         <li>L'optimisation des taches des équipes </li>
 <br/>
-        <p>Je suis une personne avide de nouvelles expériences et pour tout cela je ne regrette aucune des étapes de mon parcours car elles m'ont chacune permi de developper une voire plusieurs atouts supplémentaire qui me serviront tout  au long de ma carrière </p>
+        <p>Je suis une personne avide de nouvelles expériences et pour tout cela je ne regrette aucune des étapes de mon parcours car elles m'ont chacune permis de developper un voire plusieurs atouts supplémentaires qui me serviront tout  au long de ma carrière </p>
 
 
   </Message>

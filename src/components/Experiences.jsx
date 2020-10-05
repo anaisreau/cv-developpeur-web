@@ -59,7 +59,7 @@ const exp=[
 {
   poste : 'Assistante de Direction ', 
   entreprise: 'Caisse d\'Allocations Familiales des Bouches-du-Rhône',
-  présentation : 'Assistance de la sous Directrice - Creation d\'outils optimisant les taches sur Visual Basic. J\'ai egalement été volontaire pour former bénévolement les équipe lors d\'une transition numérique ' ,
+  présentation : 'Assistance de la sous Directrice - Creation d\'outils optimisant les tâches sur Visual Basic. J\'ai egalement été volontaire pour former bénévolement les équipes lors d\'une transition numérique ' ,
   type : 'CDI', 
   image : 'https://upload.wikimedia.org/wikipedia/fr/thumb/c/cb/Caisse_d_allocations_familiales_france_logo.svg/1200px-Caisse_d_allocations_familiales_france_logo.svg.png', 
   competences : 'Visual Basic, Pack Office',
@@ -68,7 +68,7 @@ const exp=[
 {
   poste : 'Création et Gestion Restaurant Pizzeria Traiteur ', 
   entreprise: 'Caisse d\'Allocations Familiales des Bouches-du-Rhône',
-  présentation : 'Assistance de la sous Directrice - Creation d\'outils optimisant les taches sur Visual Basic. J\'ai egalement été volontaire pour former bénévolement les équipe lors d\'une transition numérique ' ,
+  présentation : 'Creation d\'un restaurant, pizzeria, traiteur. Gestion des commandes, mise en place, service et cuisine, relations commerciales, Gestion administrative' ,
   type : 'Gerante', 
   image: logo,
   competences : 'Management, Normes d\'hygiene, Cuisine  ',
