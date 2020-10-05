@@ -1,15 +1,16 @@
 .fond{
-  background-image: url('https://images7.alphacoders.com/383/383848.jpg');
+  background-image:url('https://us.123rf.com/450wm/rangizzz/rangizzz1601/rangizzz160100004/50981480-winter-background-chutes-de-neige-isol%C3%A9-sur-fond-noir.jpg?ver=6');
   background-position-x: center;
   background-size: cover;
-  min-height: 100vh;
+ height: 100vh;
 
 }
 
 
 .homePage{
-  max-width: 70% ;
+  max-width: 80% ;
   margin: auto;
   margin-bottom: 10%;
   
 }
+

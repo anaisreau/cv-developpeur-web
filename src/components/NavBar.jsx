@@ -4,7 +4,6 @@ import React, { Component } from 'react'
 import {
   Button,
   Container,
-  Header,
   Icon,
   Menu,
   Segment,
@@ -12,7 +11,10 @@ import {
   Visibility,
 
 } from 'semantic-ui-react';
+import CV from '../CV-Anais-Reau.pdf'
+import './title.scss'
 import './NavBar.css'
+import Title from './title'
 
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {
@@ -26,28 +28,14 @@ const { MediaContextProvider, Media } = createMedia({
 
 
 const HomepageHeading = ({ mobile }) => (
-  <Container text >
-    <Header
-      as='h1'
-      content='Anais Réau'
-      style={{
-        fontSize: mobile ? '2em' : '4em',
-        fontWeight: 'bold',
-        marginBottom: 0,
-        marginTop: mobile ? '4em' : '1.2em',
-        color : mobile ? 'white' : 'black'
-      }}
-    />
-    <Header
-      as='h2'
-      content='Developpeur FullStack React.js / Node.js'
-      inverted
-      style={{
-        fontSize: mobile ? '1.5em' : '1.7em',
-        fontWeight: 'normal',
-        marginTop: mobile ? '0.7em' : '1em',
-      }}
-    />
+<div className='adaptable'>
+
+  <>
+ <Title />
+
+
+ 
+   
       <div className='listeContact'
       style={{
         fontSize: mobile ? '2em' : '1.5em',
@@ -55,14 +43,20 @@ const HomepageHeading = ({ mobile }) => (
         color : mobile ? 'white' : 'black',
         
       }}>
-   
-    
-     
      <a href='mailto:anaisreau@gmail.com'><Icon name='mail'/></a>
      <a href='https://www.linkedin.com/in/anaisreau/'target='_blanck'><Icon name='linkedin'/></a>
      <a href='https://github.com/anaisreau' target='_blanck'><Icon name='github'/></a>
      </div>
-     </Container>
+     
+<a href={CV} download><footer>
+    <div class="texto">
+        <span>
+            <i class="fab fa-youtube"></i>
+             Télécharger mon CV</span>
+    </div>
+</footer>
+   </a>
+</></div>
 )
 
 HomepageHeading.propTypes = {
@@ -123,6 +117,7 @@ class DesktopContainer extends Component {
         {children}
       </Media>
     )
+    
   }
 }
 
@@ -145,15 +140,14 @@ class MobileContainer extends Component {
       <Media as={Sidebar.Pushable} at='mobile' >
         <Sidebar.Pushable>
           <Sidebar inverted
+          className="sidebar"
             as={Menu}
             animation='overlay'
             onHide={this.handleSidebarHide}
             vertical
             visible={sidebarOpened}
           >
-            <Menu.Item as='a' active>
-              Home
-            </Menu.Item>
+            
             <Menu.Item as='a'>Accueil</Menu.Item>
             <Menu.Item href='#formation'as='a'>Formations</Menu.Item>
             <Menu.Item href='#experiences'as='a'>Expériences</Menu.Item>
@@ -187,6 +181,7 @@ class MobileContainer extends Component {
           </Sidebar.Pusher>
         </Sidebar.Pushable>
       </Media>
+
     )
   }
 }
@@ -195,14 +190,16 @@ MobileContainer.propTypes = {
   children: PropTypes.node,
 }
 
-const NavBar = ({ children }) => (
-
+const NavBar = ({ children }) => {
+return (
+  <div >
   <MediaContextProvider>
     <DesktopContainer>{children}</DesktopContainer>
     <MobileContainer>{children}</MobileContainer>
   </MediaContextProvider>
+  </div>
 )
-
+}
 NavBar.propTypes = {
   children: PropTypes.node,
 }

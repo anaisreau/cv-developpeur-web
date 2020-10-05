@@ -1,9 +1,14 @@
-import React from 'react'
-import {Divider,  Image} from 'semantic-ui-react'
+import React, { useEffect}  from'react'
+import {Divider} from 'semantic-ui-react'
 import './Experiences.css'
 import logo from '../PO.jpeg'
+import aos from 'aos'
+import 'aos/dist/aos.css'
+import Accordion from './Accordion'
 
 const Experiences =()=>{
+
+  
 
 const exp=[
   {
@@ -97,6 +102,11 @@ const exp=[
   date : '09/09/2008'
 }, 
 ]
+
+useEffect(()=>{
+    aos.init({duration : 2000 })
+  },[]);
+
   return(
 <div id='experiences'>
   <Divider
@@ -107,17 +117,19 @@ const exp=[
         >
           <p>Expériences Professionnelles</p> 
         </Divider>
-        <div className='card'>
   {exp.map(e => 
-  <div className='exp'>
+  <>
     <Divider/>
-        <Image className='logosexp'src={e.image} />    
-        <h4>{e.poste}</h4>
-        <h6>{e.entreprise}</h6> 
-       <h6>{e.date}</h6> 
-       <p>{e.présentation}</p>
-       <p>{e.competences}</p>
-    </div>  )}</div>
+      <Accordion 
+      image={e.image}
+      poste={e.poste}
+      entreprise={e.entreprise}
+      date={e.date}
+      présentation={e.présentation}
+      compentences={e.competences}
+      />
+      </>
+         )}
 
 
 

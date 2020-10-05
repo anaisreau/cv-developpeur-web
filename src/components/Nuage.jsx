@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import randomColor from 'randomcolor';
 import TagCloud from 'react-tag-cloud';
 import './Nuage.css'
-import { Divider, Segment, Icon  } from 'semantic-ui-react'
+import { Divider, Segment, Icon, Message  } from 'semantic-ui-react'
 
 const styles = {
   large: {
@@ -74,10 +74,10 @@ class Nuage extends Component {
 
           </TagCloud>
         </div>
-      </div>
-      
-      </Segment><br/><p>Mais aussi ... </p>
-      <p>Au travers de mes différentes expériences et de mon parcours atypique j'ai eu l'occasion d'apprendre : </p>
+      </div></Segment>
+      <br/><Message>
+    <Message.Header>Mais aussi ... </Message.Header>
+    <p>Au travers de mes différentes expériences et de mon parcours atypique j'ai eu l'occasion d'apprendre : </p>
         <li>Le management d'equipe, </li>
         <li>La restauration, </li>
         <li>La gestion d'entreprise, </li>
@@ -88,6 +88,9 @@ class Nuage extends Component {
         <p>Je suis une personne avide de nouvelles expériences et pour tout cela je ne regrette aucune des étapes de mon parcours car elles m'ont chacune permi de developper une voire plusieurs atouts supplémentaire qui me serviront tout  au long de ma carrière </p>
 
 
+  </Message>
+  
+      
       
       </div>
     );
