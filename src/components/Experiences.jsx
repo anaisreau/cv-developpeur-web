@@ -25,7 +25,7 @@ const exp=[
   entreprise: 'Wild Code School et Immobiliere Pujol',
   présentation : 'Dans le cadre du drame de la rue d\'Aubagne à Marseille et de la mise en péril d\'un certain nombre d\'immeuble, création d\'une application visant a faciliter les signalements d\'insalubrité aux personnes compétentes ' ,
   type : 'Projet dans le cadre de la formation de developpeur Web', 
-  image : 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjz5qMozaRxJbKNApdqF7Y-vJZVl8ysUlS9g&usqp=CAU',
+  image : 'https://photo.superimmo.com/photos/shops/02/82/28208/sp_large_pad_logo-pujol-hits.png',
   competences : 'React.js, Node.js, Semantic-ui, SQL',
   date : '01/05/2020'
 },
@@ -34,7 +34,7 @@ const exp=[
   entreprise: 'Wild Code School',
   présentation : 'Creation d\'une application ludique favorisant la reforestation. A travers des quizz donner la possibiliter aux participants de planter des arbres' ,
   type : 'Projet dans le cadre de la formation de developpeur Web', 
-  image : 'https://photo.superimmo.com/photos/shops/02/82/28208/sp_large_pad_logo-pujol-hits.png', 
+  image : 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjz5qMozaRxJbKNApdqF7Y-vJZVl8ysUlS9g&usqp=CAU', 
   competences : 'React.js, Node.js, Semantic-ui, TypeForm, SQL',
   date : '01/04/2020'
 },
