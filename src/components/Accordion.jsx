@@ -19,7 +19,7 @@ function Accordion({ date, présentation, competences, image, poste, entreprise 
                     </Grid.Column>
                     <GridColumn width={10}>
                     <h4>{poste}</h4>
-                    <p>{entreprise}{date}</p>
+                    <p>{entreprise}</p>
                     <i onClick={() => Open()}><Icon name={isOpen ? 'angle up' : 'angle down'}/></i>
                     <p>{isOpen ? date : ''}</p>
                     <p>{isOpen ? présentation : ''}</p>

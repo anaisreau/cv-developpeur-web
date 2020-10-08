@@ -75,8 +75,8 @@ class Nuage extends Component {
           </TagCloud>
         </div>
       </div></Segment>
-      <br/><Message>
-    <Message.Header>Mais aussi ... </Message.Header>
+      <br/><Message className='message'>
+    <Message.Header >Mais aussi ... </Message.Header>
     <p>Au travers de mes différentes expériences et de mon parcours atypique j'ai eu l'occasion d'apprendre : </p>
         <li>Le management d'equipe, </li>
         <li>La restauration, </li>
