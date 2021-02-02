@@ -46,7 +46,7 @@ return (
    
       <div className='listeContact'
       style={{
-        fontSize: mobile ? '2em' : '1.5em',
+        fontSize: mobile ? '2em' : '3em',
         fontWeight: 'normal',
         color : mobile ? 'white' : 'black',
         
